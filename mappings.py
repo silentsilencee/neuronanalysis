@@ -4,8 +4,7 @@ import h5py
 import os
 
 def read_file_setup(path, tracker):
-    num_frames = 1
-    tracker = {}
+    num_frames = 6000
     with h5py.File(path, 'r') as f1:
         data = f1["frames"].value
     data = data[:num_frames]
