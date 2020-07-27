@@ -30,5 +30,6 @@ if __name__ == "__main__":
     for cell in list_of_cells:
         paths_new.append(base_path + cell + '/' + cell + '.cellSpike.data_0.h5')
     for path in paths_new:
-        read_file_setup(path, tracker)
+        tracker = read_file_setup(path, tracker)
+    print(tracker)
     
