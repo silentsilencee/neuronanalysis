@@ -17,7 +17,7 @@ def read_file_setup(path, tracker):
     new_info = np.log(new_info)
     mean = np.mean(new_info)
     std = np.std(new_info)
-    tracker[val[i_folder]] = [offset,mean,std]
+    tracker[path[len(path) -25 :len(path) -20]] = [offset,mean,std]
     return tracker
     
 
